@@ -1,3 +1,13 @@
+/*
+ * Name: Hannah Hui
+ * Email: hahui@ucsd.edu
+ * PID: A00000000
+ * Sources Used: JDK 17 Doc
+ *
+ * This is an example of the public tester for CSE 12 PA5 in Winter 2023.
+ * It contains sanity checks on all 3 classes.
+ */
+
 import org.junit.Test;
 
 import java.util.HashSet;
@@ -5,6 +15,9 @@ import java.util.Objects;
 
 import static org.junit.Assert.*;
 
+/**
+ * The public tester for PA5, which covers some basic test cases.
+ */
 public class PublicTester {
 
     // ----------------Student class----------------
@@ -32,12 +45,14 @@ public class PublicTester {
         assertEquals(student1, student2);
     }
 
-    // Test hashing function
+    /**
+     * Test hashCode from Student
+     */
     @Test
     public void testHashValueSame() {
-        Student student1 = new Student("Test", "Student",
+        Student student = new Student("Test", "Student",
                 "A12345678");
-        assertEquals(student1.hashCode(), Objects.hash("Test",
+        assertEquals(student.hashCode(), Objects.hash("Test",
                 "Student", "A12345678"));
     }
 
@@ -138,22 +153,22 @@ public class PublicTester {
      */
     @Test
     public void TestGetTotalAnimals() {
-        Sanctuary sanct1 = new Sanctuary(100, 4);
-        sanct1.sanctuary.put("Koala", 55);
-        assertEquals(55, sanct1.getTotalAnimals());
+        Sanctuary sanct = new Sanctuary(100, 4);
+        sanct.sanctuary.put("Koala", 55);
+        assertEquals(55, sanct.getTotalAnimals());
     }
 
     /**
      * Get total number of species at a sanctuary
      */
     public void TestGetTotalSpecies() {
-        Sanctuary sanct1 = new Sanctuary(1000, 4);
-        sanct1.sanctuary.put("Koala", 55);
-        sanct1.sanctuary.put("Capybara", 70);
-        sanct1.sanctuary.put("Groundhog", 22);
-        sanct1.sanctuary.put("Vulture", 3);
-        sanct1.sanctuary.put("Zebra", 14);
-        assertEquals(5, sanct1.getTotalSpecies());
+        Sanctuary sanct = new Sanctuary(1000, 4);
+        sanct.sanctuary.put("Koala", 55);
+        sanct.sanctuary.put("Capybara", 70);
+        sanct.sanctuary.put("Groundhog", 22);
+        sanct.sanctuary.put("Vulture", 3);
+        sanct.sanctuary.put("Zebra", 14);
+        assertEquals(5, sanct.getTotalSpecies());
     }
 
     /**

@@ -114,7 +114,7 @@ You will be required to implement the following methods.
 |`public String getNumber()`|Return the course number.||
 |`public String getDescription()`|Return the description of the course.||
 |`public int getCapacity()`|Return the capacity of the course.||
-|`public boolean enroll(Student student)`|If there is room in this course and the student is not currently enrolled, add the student to the course. Return `true` for successful enrollment and `false` otherwise.|Throw an `IllegalArgumentException` if `student` is `null`.|
+|`public boolean enroll(Student student)`|If there is room in this course and the student is not currently enrolled, add the student to the course. Return `true` for successful enrollment and `false` otherwise (i.e. the student is already in the course).|Throw an `IllegalArgumentException` if `student` is `null`.|
 |`public boolean drop(Student student)`|If the student is enrolled in the course, drop them from the course. Return `true` for successfully dropping student and `false` otherwise (i.e. the student is not in the course).|Throw an `IllegalArgumentException` if `student` is `null`.|
 |`public void cancel()`|If the course is canceled, all of the students are dropped from the course. Remove all the students from the course.||
 |`public boolean isFull()`|If the course is at its capacity, return `true`. Otherwise, return `false`.||
@@ -170,7 +170,7 @@ You will be required to implement the following methods.
     * Some of your tests will be run on several bad implementations. You will receive 1.25 pts for every bad implementation your test fails (if your test also passes on the good implementation). **See the bottom of the writeup [here](#How-your-assignment-will-be-evaluated-100-points) for the new CustomTester point assignment (maximum score of 10pts for CustomTester).**
    * Make sure the names of your tests match exactly with the names in the table. If the names of any tests don't match, you'll not receive points for those tests.
    * Feel free to create more tests for your own benefits (additional test will not be graded).
-* Tip: You might find the `.equals` method of HashSet or HashMap helpful when you write your asserts. However, the downside is that this will not report detailed failure messages, in which case writing other asserts on HashSet/HashMap may be helpful.
+   * Tip: You might find the `.equals` method of HashSet or HashMap helpful when you write your asserts. However, the downside is that this will not report detailed failure messages, in which case writing other asserts on HashSet/HashMap may be helpful.
 
 
 #### Tests Table: List of test cases to write and their description
@@ -245,3 +245,5 @@ A full style guide can be found [here](https://github.com/CaoAssignments/style-g
         * The autograder will test your implementation on the public test cases given in `PublicTester.java` and hidden test cases not described in this PA writeup.
 * **Coding Style** [5 points]
     * `Student.java`, `Course.java`, `Sanctuary.java` will be graded on style. `CustomTester.java` will be graded on file, class, method headers and indentation.
+
+

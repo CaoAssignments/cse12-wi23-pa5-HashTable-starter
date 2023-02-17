@@ -137,7 +137,7 @@ You will be using a `HashMap` to help you organize all the animals at the sanctu
 
 |Instance Variable|Description|
 |--- |--- |
-|`HashMap<String, Integer> sanctuary`|Container to store all the animal species in the sanctuary. The key (`String`) represents the name of the animal species and the value (`Integer`) represents the number of that species at the sanctuary. If at anytime, the key is `null` or the value is 0, the species should not be in the sanctuary `HashMap`.|
+|`HashMap<String, Integer> sanctuary`|Container to store all the animal species in the sanctuary. The key (`String`) represents the name of the animal species and the value (`Integer`) represents the number of that species at the sanctuary. **If at anytime, the key is `null` or the value is 0, the species should not be in the sanctuary `HashMap`.**|
 |`int maxAnimals`|The maximum number of animals that the sanctuary can support.|
 |`int maxSpecies`|The maximum number of species that the sanctuary can support.|
 

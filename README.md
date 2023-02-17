@@ -191,13 +191,13 @@ You will be required to implement the following methods.
 #### How to compile and run the testers:
 Running the tester on UNIX based systems (including macOS):
 
-* Compile: `javac -cp ./libs/junit-4.13.2.jar:./libs/hamcrest-2.2.jar:. PublicTester.java`
-* Execute: `java -cp ./libs/junit-4.13.2.jar:./libs/hamcrest-2.2.jar:. org.junit.runner.JUnitCore PublicTester`
+* Compile: `javac -cp ../libs/junit-4.13.2.jar:../libs/hamcrest-2.2.jar:. PublicTester.java`
+* Execute: `java -cp ../libs/junit-4.13.2.jar:../libs/hamcrest-2.2.jar:. org.junit.runner.JUnitCore PublicTester`
 
 Running the tester on Windows systems:
 
-* Compile: `javac -cp ".;.\libs\junit-4.13.2.jar;.\libs\hamcrest-2.2.jar" PublicTester.java`
-* Execute: `java -cp ".;.\libs\junit-4.13.2.jar;.\libs\hamcrest-2.2.jar" org.junit.runner.JUnitCore PublicTester`
+* Compile: `javac -cp ".;..\libs\junit-4.13.2.jar;..\libs\hamcrest-2.2.jar" PublicTester.java`
+* Execute: `java -cp ".;..\libs\junit-4.13.2.jar;..\libs\hamcrest-2.2.jar" org.junit.runner.JUnitCore PublicTester`
 
 You should run the above commands in the `starter` directory. To run the custom tester, replace references to PublicTester with CustomTester in the above commands.
 

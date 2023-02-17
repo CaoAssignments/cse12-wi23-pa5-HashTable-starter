@@ -18,7 +18,7 @@ There is an FAQ post on Piazza. Please read that post first if you have any ques
 
 ## Testing and Implementation of HashMap and HashSet Application [100 points]
 
-### Part 1: Implementation of Hashset/HashMap (75 points)
+### Part 1: Implementation of Hashset/HashMap (85 points)
 
 
 In this part of the assignment,  you will directly use Java's built-in data structures and write JUnit tests to ensure that you call the functions correctly.
